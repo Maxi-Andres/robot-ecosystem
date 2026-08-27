@@ -1,0 +1,20 @@
+# =============================================================================
+#  Wrapper repo: holds only the map (README) and this ignore list.
+#  The four project repos are INDEPENDENT (each its own .git) and are NOT part
+#  of this repo — see README.md for how to clone them.
+# =============================================================================
+
+# --- Project repos (each is its own git repository) --------------------------
+robot-video-pipeline/
+robot-telemetry-agent/
+robot-command-relay/
+robot-splunk-docs/
+
+# --- OS / editor cruft -------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
