@@ -30,6 +30,12 @@ es un repo independiente (su propio `.git`) y está gitignoreado acá, igual que
 | **`robot-command-relay`** | El único camino remoto que puede mover al robot. Token, rate limit, allowlist, clamp de velocidad, hombre muerto | En el robot |
 | **`robot-splunk-docs`** | El registro de ingeniería: mediciones, decisiones y planes que citan los otros repos | No corre |
 
+## Go2 y G1: qué va en cada robot
+
+Los tres repos del robot sirven a los dos robots. Qué archivo corre en cuál, y la convención
+de nombres que lo hace visible (`go2_*`, `g1_*` / `host/g1/`, sin prefijo = compartido), están
+en **`robot-splunk-docs/QUE-CORRE-EN-CADA-ROBOT.md`**.
+
 ## La restricción que explica el diseño
 
 El DDS de estos robots no cruza una frontera de subred. Medido en un Go2: **122** tópicos
