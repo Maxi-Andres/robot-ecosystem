@@ -83,4 +83,4 @@ en ese orden.
 
 - **Código y comentarios en inglés**, sin excepción. Los documentos de planificación de
   `robot-splunk-docs` van en castellano a propósito.
-- **Nunca `git commit` ni `git push`**: el usuario revisa y commitea a mano.
+- **Los commits los hace Claude, el push el usuario.** Siempre en la rama principal y con la identidad de git del usuario. **NUNCA** con atribución a una IA: ni `Co-Authored-By: Claude`, ni "Generated with Claude Code", ni autor IA, en ningún commit, PR ni tag. Un hook `commit-msg` en cada repo lo rechaza.
